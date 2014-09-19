@@ -1,0 +1,130 @@
+﻿@model autoshopbiz.Models.customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.external_key)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.external_key)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.create_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.create_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.createdby)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.createdby)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modify_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modify_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modify_by)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modify_by)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ffirst_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ffirst_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.last_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.last_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.marketable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.marketable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.active)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email_address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email_address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_comment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.shop_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shop_id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.customerid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

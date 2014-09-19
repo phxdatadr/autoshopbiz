@@ -1,0 +1,111 @@
+﻿@model IEnumerable<autoshopbiz.Models.customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.external_key)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.create_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.createdby)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.modify_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.modify_by)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ffirst_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.last_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.user_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.marketable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.active)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email_address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.customer_comment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.shop_id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.external_key)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.create_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.createdby)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.modify_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.modify_by)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ffirst_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.last_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.user_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.marketable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.active)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email_address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.customer_comment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.shop_id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.customerid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.customerid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.customerid })
+        </td>
+    </tr>
+}
+
+</table>
